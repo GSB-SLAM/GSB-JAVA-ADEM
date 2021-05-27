@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--colors for crop activity-->
+    <!--<color name="ucrop_color_toolbar">@color/teal_500</color>-->
+    <!--<color name="ucrop_color_statusbar">@color/teal_700</color>-->
+    <!--<color name="ucrop_color_widget_active">@color/teal_500</color>-->
+
+</resources>

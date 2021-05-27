@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Amédicament"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".EtapeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgGSB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:contentDescription="@string/icone_frais_etape"
+                android:src="@drawable/frais_etape"
+                app:srcCompat="@drawable/gsbe" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtReport"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:gravity="start|center"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Compte-rendu"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <AutoCompleteTextView
+            android:id="@+id/Anom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom" />
+
+        <AutoCompleteTextView
+            android:id="@+id/Aadresse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="adresse" />
+
+        <AutoCompleteTextView
+            android:id="@+id/Amedicament"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Médicament présenté" />
+
+        <RadioButton
+            android:id="@+id/AradioInteret"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intêret" />
+
+        <EditText
+            android:id="@+id/Acommentaire"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Commentaire" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/cmdReportValider"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/valider" />
+
+    </LinearLayout>
+</LinearLayout>
